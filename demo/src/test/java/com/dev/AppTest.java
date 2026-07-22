@@ -21,8 +21,8 @@ public class AppTest
 
     @Test
     public void TestDivide(){
-        App div= new App();
-        int result = div.divide(10, 2);
+        App divisonApp= new App();
+        int result = divisonApp.divide(10, 2);
         int expected = 5;
         assertEquals(expected, result);
     }
