@@ -21,8 +21,8 @@ public class AppTest
 
     @Test
     public void TestDivide(){
-        App divisonApp= new App();
-        int result = divisonApp.divide(10, 2);
+        App div= new App();
+        int result = div.divide(10, 2);
         int expected = 5;
         assertEquals(expected, result);
     }
@@ -38,7 +38,7 @@ public class AppTest
     @Test
     public void TestReverseString2(){
         App rev=new App();
-        assertEquals("lroW",rev.reverseString("Worl"));
+        assertEquals("dlroW",rev.reverseString("World"));
         assertEquals("avaJ",rev.reverseString("Java"));
         assertEquals("tseT",rev.reverseString("Test"));
     }
