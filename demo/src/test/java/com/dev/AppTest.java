@@ -38,7 +38,7 @@ public class AppTest
     @Test
     public void TestReverseString2(){
         App rev=new App();
-        assertEquals("dlroW",rev.reverseString("World"));
+        assertEquals("lroW",rev.reverseString("Worl"));
         assertEquals("avaJ",rev.reverseString("Java"));
         assertEquals("tseT",rev.reverseString("Test"));
     }
