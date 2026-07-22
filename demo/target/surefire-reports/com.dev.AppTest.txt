@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.dev.AppTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.08 s <<< FAILURE! - in com.dev.AppTest
-TestReverseString2(com.dev.AppTest)  Time elapsed: 0.009 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[]seT> but was:<[t]seT>
-	at com.dev.AppTest.TestReverseString2(AppTest.java:43)
-
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 s - in com.dev.AppTest
