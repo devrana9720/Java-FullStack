@@ -41,6 +41,7 @@ public class AppTest
         assertEquals("dlroW",rev.reverseString("World"));
         assertEquals("avaJ",rev.reverseString("Java"));
         assertEquals("tseT",rev.reverseString("Test"));
+        assertEquals("gnimmargorP",rev.reverseString("Programming"));
     }
 }
  
