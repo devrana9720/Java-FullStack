@@ -1,8 +1,10 @@
 package com.dev;
 
-import static org.junit.Assert.*;
+// import static org.junit.Assert.*;
 
-import org.junit.Test;
+// import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
 /**
  * Unit test for simple App.
@@ -21,14 +23,32 @@ public class AppTest
 
     @Test
     public void TestDivide(){
+        System.out.println("TestDivide: Testing division 10/2");
         App div= new App();
-        int result = div.divide(10, 2);
+        int result= div.divide(10, 2);
         int expected = 5;
-        assertEquals(expected, result);
+        assertEquals(expected, result,()->"Division result is not as expected");
     }
-
+    @Test
+    public void TestDivide1(){
+        System.out.println("TestDivide1: Testing division 8/2");
+        App div= new App();
+        int result = div.divide(8, 2);
+        int expected = 4;
+        assertEquals(expected, result,()->"Division result is not as expected");
+    }
+    @Test
+    public void TestDivide2(){
+        System.out.println("TestDivide2: Testing division 20/2");
+        App div= new App();
+        int result = div.divide(20, 2);
+        int expected = 10;
+        assertEquals(expected, result,()->"Division result is not as expected");
+    }
+ 
     @Test
     public void TestReverseString1(){
+        System.out.println("TestReverseString1: Testing string reversal");
         App rev=new App();
         String result=rev.reverseString("Hello");
         String expected="olleH";
