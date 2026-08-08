@@ -5,16 +5,16 @@ public class Selection_sort {
         int n = arr.length;
         int steps = 0;
         for (int i = 0; i < n - 1; i++) {
-            int maxIndex = i;
+            int minIndex = i;
             for (int j = i + 1; j < n; j++) {
-                if (arr[maxIndex] < arr[j]) {
-                    maxIndex = j;
+                if (arr[minIndex] > arr[j]) {
+                    minIndex = j;
                 }
             }
-            if (maxIndex != i) {
+            if (minIndex != i) {
                 int temp = arr[i];
-                arr[i] = arr[maxIndex];
-                arr[maxIndex] = temp;
+                arr[i] = arr[minIndex];
+                arr[minIndex] = temp;
                 steps++;
             }
         }
