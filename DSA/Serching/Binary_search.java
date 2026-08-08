@@ -7,10 +7,10 @@ public class Binary_search {
         int arr[]={10,20,30,40,50};
         int tar=40;
         int low=0;
-        int high=arr.length-1;
+        int hig=arr.length-1;
         int steps=0;
-        while(low<=high){
-            int mid=(low+high)/2;
+        while(low<=hig){
+            int mid=(low+hig)/2;
             steps++;
             if(arr[mid]==tar){
                 System.out.println("Element found at index: "+mid);
@@ -21,7 +21,7 @@ public class Binary_search {
                 low=mid+1;
             }
             else{
-                high=mid-1;
+                hig=mid-1;
             }
         }
     }
