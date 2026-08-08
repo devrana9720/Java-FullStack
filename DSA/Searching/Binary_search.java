@@ -1,6 +1,9 @@
-
 public class Binary_search {
     public static void main(String[] args) {
+
+        //Time Complexity: O(log n)
+        //Space Complexity: O(1)
+        
         int arr[]={10,20,30,40,50};
         int tar=40;
         int low=0;
@@ -11,7 +14,7 @@ public class Binary_search {
                 System.out.println("Element found at index: "+mid);
                 break;
             }
-            else if(arr[mid]<tar){
+            else if(arr[mid]<tar){ 
                 low=mid+1;
             }
             else{
